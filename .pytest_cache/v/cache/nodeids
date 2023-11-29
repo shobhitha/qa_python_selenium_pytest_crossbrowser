@@ -1,0 +1,5 @@
+[
+  "test.py::test_login_test",
+  "test.py::test_my_very_first_test",
+  "testCases/test.py::test_login_test"
+]

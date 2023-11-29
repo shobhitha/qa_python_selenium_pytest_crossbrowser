@@ -1,0 +1,4 @@
+{
+  "test.py::test_my_very_first_test": true,
+  "testCases/test_login.py": true
+}
