@@ -1,10 +1,12 @@
 # qa_python_selenium_pytest_crossbrowser
 
 **Description**
+
 This project performs testing of demo application Swag Labs (https://www.saucedemo.com) across different browsers (Chrome, Firefox, IE, Edge). Technologies used to automate the 
 crossbrowser testing of Swag labs are: Python, Selenium, Pytest, Pytest-html (to generate reports), Pytest-xdist (for running tests in parallel). 
 
 **Page Object Model Structure:**
+    
     pageObjects - project pages/locators directory
     Reports - HTML reports directory
     testCases - project tests directory
@@ -12,6 +14,7 @@ crossbrowser testing of Swag labs are: Python, Selenium, Pytest, Pytest-html (to
 
 
 **To install the packages this project requres:**
+
 pip install -r requirements.txt 
 
 **To run tests in terminal :**
