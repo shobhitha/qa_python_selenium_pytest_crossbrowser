@@ -1,5 +1,4 @@
 from selenium import webdriver
-
 import pytest
 
 #Browser setup
@@ -13,10 +12,11 @@ def setup(browser):
 
     #Testing in firefox browser
     elif browser == 'firefox':
-        drive = webdriver.Firefox()
+        driver = webdriver.Firefox()
         print("Launching Firefox browser")
 
-    #Testing in Internet explorer browser
+
+    #Testing in Internet explorer browser (on Mac setup a windowsVM with IE)
     elif browser == 'ie':
         driver = webdriver.Ie()
         print("Launching Internet explorer browser")
@@ -33,7 +33,7 @@ def setup(browser):
     return driver
 
 def pytest_addoption(parser):
-    parser.addoption("--browser")
+    parser.addoption("--browser", action='store')
 
 @pytest.fixture()
 def browser(request):

@@ -14,13 +14,16 @@ class Test_001_Login:
         self.driver.get(self.baseURL)
         actual_title = self.driver.title
 
+        #try:
         if actual_title == "Swag Labs":
             assert True
             self.driver.close()
         else:
-            self.driver.save_screenshot("Screenshots" + "test_homepage_title.png" )
+            self.driver.save_screenshot(".//Screenshots//" + "test_homepage_title.png" )
             self.driver.close()
             assert False
+        #except AssertionError as msg:
+           # print(msg)
 
     # Testing the login-ing with valid credentials
     def test_login(self,setup):
