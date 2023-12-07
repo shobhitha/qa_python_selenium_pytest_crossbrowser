@@ -21,5 +21,6 @@ pip install -r requirements.txt
 
 pytest -v -s testCases/<test_file>.py
 
-runs tests in parallel(-n option), creates html reports, --browser option let us mention the type of browser the test whould be run on 
+runs tests in parallel(-n option), creates html reports(--html), to mention the type of browser(--browser) 
+
 pytest -v -s -n=2 --html=Reports/reports.html testCases/<test_file.py> --browser= <browser_name> (chrome, firefox, ie, edge)
